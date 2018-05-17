@@ -1,0 +1,27 @@
+{% extends 'blog1/layout.html' %}
+
+{% block body %}
+<h3>The Blog details are:</h3>
+
+<br>
+<br>
+  <fieldset class="module aligned ">
+    <div class="">
+      <label for="id_blog_title"><h5>Blog title:</h5></label>
+      <input type="text" name="blog_title" value="{{blogpost.blog_title}}" class="vTextField" maxlength="200"  readonly id="id_blog_title" />
+
+    </div>
+    <div class="form-row field-blog_description">
+      <div class="">
+        <label  for="id_blog_description"><h6>Blog description:</h6></label>
+        <textarea name="blog_description"  rows="6" class="vLargeTextField" readonly id="id_blog_description">
+          {{blogpost.blog_description}}</textarea>
+      </div>
+    </div>
+  </fieldset>
+
+
+  <br>
+  <br>
+  <a class="waves-effect waves-light btn-small" onclick="goBack()">back</a>
+{% endblock %}

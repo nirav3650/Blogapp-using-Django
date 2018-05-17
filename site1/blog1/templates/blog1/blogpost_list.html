@@ -1,0 +1,27 @@
+{% extends "blog1/layout.html" %}
+
+
+{%block body %}
+  {% if blogpostfound %}
+    <h2>The Blog Posts are:</h2>
+    <ul>
+    {% for ab in blogpostfound %}
+
+        <li><a href="blog\{{ab.pk}}">{{ ab.blog_title}}</a></li>
+
+
+
+
+    {% endfor %}
+    </ul>
+  {% else %}
+    <i>No Blog Post Found</i>
+  {% endif %}
+<div class="but1">
+  <a class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons" onclick="window.location.href='add/'">add</i></a>
+
+
+</form>
+</div>
+
+{%endblock%}

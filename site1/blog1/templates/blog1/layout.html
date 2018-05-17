@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Blogs App</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+    function goBack() {
+      window.history.back();
+      }
+
+      function addpost() {
+        alert('hi');
+      }
+
+
+      
+    </script>
+    <style media="screen">
+          body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+
+      .page-footer {
+  background-color: #50acaf ;//#2ca395;
+}
+  .but1 {
+  position: absolute;
+  right:    50px;
+  bottom:   102px;
+  }
+  textarea { height: auto; }
+
+    </style>
+  </head>
+
+
+<main>
+
+  <body>
+
+    <div class="container">
+
+
+  {%block body%}
+
+  {% endblock %}
+</div>
+
+
+  </body>
+
+
+</main>
+  <footer class="page-footer">
+    <div class="container">
+
+      Simple Blog APP
+
+          </div>
+  </footer>
+
+</html>
